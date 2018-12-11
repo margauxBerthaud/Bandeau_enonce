@@ -9,6 +9,9 @@ package bandeau;
  *
  * @author Margaux
  */
-public class Effet {
-    
+public abstract class Effet {
+    public Effet(){
+        
+    }
+    public abstract void afficher();
 }
