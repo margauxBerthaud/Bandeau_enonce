@@ -7,16 +7,15 @@ package bandeau;
 
 import java.awt.Color;
 import java.awt.Font;
-import java.util.Random;
 
 /**
  *
  * @author flaviebilhac
  */
-public class FondMulticoloreFete extends Effet{
+public class PoliceChangeanteBras extends Effet{
     private Bandeau b;
     
-    public FondMulticoloreFete (Bandeau band){
+    public PoliceChangeanteBras(Bandeau band){
         this.b = band;
         b.setBackground(Color.red);
         b.setForeground(Color.WHITE);
@@ -24,13 +23,11 @@ public class FondMulticoloreFete extends Effet{
     
     @Override
     public void afficher(){
-        b.setMessage("Je suis toujours à la fête");
+        b.setMessage("Quand tu me tiens dans tes bras");
         b.setFont(new Font("SansSerif 15", Font.ITALIC,16));
-        Color col;
-        Random r = new Random();
-        boolean bool = true;
-        while(bool==true){
-            b.setBackground(col= new Color(r.nextInt(256), r.nextInt(256), r.nextInt(256)));
-        }
+        b.sleep(1000);
+        b.setFont(new Font("Courier new", Font.ITALIC,16));
+        b.sleep(1000);
+        b.setFont(new Font("SansSerif 15", Font.ITALIC,16));
     }
 }
