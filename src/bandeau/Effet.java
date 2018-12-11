@@ -5,13 +5,10 @@
  */
 package bandeau;
 
-
-
 /**
  *
  * @author Margaux
  */
-public class EffetDeux extends Bandeau {
-    private final Bandeau effetDeux = new Bandeau();
+public class Effet {
     
 }
