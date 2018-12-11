@@ -5,11 +5,23 @@
  */
 package bandeau;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author flaviebilhac
  */
 public class Scenario {
     private Bandeau bandeau;
-    private ApparitionTexte apparitionTexte=new ApparitionTexte(bandeau);
+    protected ArrayList<Effet> effet=new ArrayList<>();
+    
+    public void ajouterEffet(Effet e){
+        effet.add(e);
+        
+    }
+    public void lireScenario(){
+        effet.forEach((e) -> {
+            e.afficher();
+        });
+    }
 }
