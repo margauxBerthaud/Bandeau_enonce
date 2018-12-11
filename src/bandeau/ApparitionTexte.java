@@ -22,11 +22,13 @@ public class ApparitionTexte extends Effet{
     }
     
     public void afficher(){
+        b.setMessage("Tu me fais tourner la tête");
         b.setFont(new Font("SansSerif 15", Font.ITALIC,16));
         for (int i=0;i<=50;i++){
             b.setRotation(2*Math.PI*i /50);
             
         }
+       
         
            }
     

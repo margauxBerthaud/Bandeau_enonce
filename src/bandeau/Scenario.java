@@ -10,5 +10,6 @@ package bandeau;
  * @author flaviebilhac
  */
 public class Scenario {
-    
+    private Bandeau bandeau;
+    private ApparitionTexte apparitionTexte=new ApparitionTexte(bandeau);
 }
