@@ -25,10 +25,10 @@ public class PoliceChangeanteBras extends Effet{
         b.setBackground(Color.red);
         b.setForeground(Color.WHITE);
         b.setMessage("Quand tu me tiens dans tes bras");
-        b.setFont(new Font("SansSerif 15", Font.ITALIC,16));
-        b.sleep(1000);
-        b.setFont(new Font("Courier new", Font.ITALIC,16));
-        b.sleep(1000);
-        b.setFont(new Font("SansSerif 15", Font.ITALIC,16));
+        b.setFont(new Font("SansSerif 15", Font.ITALIC,40));
+        b.sleep(1500);
+        b.setFont(new Font("Courier new", Font.ITALIC,40));
+        b.sleep(1500);
+        b.setFont(new Font("SansSerif 15", Font.ITALIC,40));
     }
 }

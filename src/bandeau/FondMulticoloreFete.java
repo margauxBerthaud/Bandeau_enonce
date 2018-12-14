@@ -25,14 +25,15 @@ public class FondMulticoloreFete extends Effet{
         b.setBackground(Color.red);
         b.setForeground(Color.WHITE);
         b.setMessage("Je suis toujours à la fête");
-        b.setFont(new Font("SansSerif 15", Font.ITALIC,16));
+        b.setFont(new Font("SansSerif 15", Font.ITALIC,40));
         Color col;
         Random r = new Random();
-        boolean bool = true;
-        while(bool==true){
-            b.setBackground(col= new Color(r.nextInt(256), r.nextInt(256), r.nextInt(256)));
-            b.sleep(2000);
-            bool=false;
+       
+        for (int i=0; i<31;i++){
+            b.setBackground(col= new Color(i+r.nextInt(226), i+r.nextInt(226), i+r.nextInt(226)));
+            b.sleep(100);
+            i=i+1;
         }
+      
     }
 }

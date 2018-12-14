@@ -25,7 +25,7 @@ public class ZoomManege extends Effet {
         b.setBackground(Color.WHITE);
         b.setForeground(Color.red);
         b.setMessage("Mon manège à moi c'est toi");
-        for (int i = 5; i < 60 ; i+=5) {
+        for (int i = 5; i < 80 ; i+=5) {
 			b.setFont(new Font("SansSerif 15", Font.ITALIC, 5+i));
 			b.sleep(100);
 		}

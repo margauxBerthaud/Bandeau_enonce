@@ -14,13 +14,14 @@ public class Example {
     
     public void exemple(){
         Scenario s=new Scenario();
+        b.setMessage("");//pour enlever hello world
         s.ajouterEffet(new ApparitionTexte(b), 1);
         b.sleep(500);
 
         s.ajouterEffet(new ZoomManege(b), 1);
         b.sleep(500);
         s.ajouterEffet(new FondMulticoloreFete(b), 1);
-        b.sleep(100);
+        b.sleep(500);
         s.ajouterEffet(new PoliceChangeanteBras(b), 1);
         s.lireScenario();
     }
