@@ -17,12 +17,13 @@ public class PoliceChangeanteBras extends Effet{
     
     public PoliceChangeanteBras(Bandeau band){
         this.b = band;
-        b.setBackground(Color.red);
-        b.setForeground(Color.WHITE);
+
     }
     
     @Override
     public void afficher(){
+        b.setBackground(Color.red);
+        b.setForeground(Color.WHITE);
         b.setMessage("Quand tu me tiens dans tes bras");
         b.setFont(new Font("SansSerif 15", Font.ITALIC,16));
         b.sleep(1000);

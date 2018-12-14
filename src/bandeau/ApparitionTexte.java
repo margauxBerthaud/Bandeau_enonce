@@ -17,15 +17,17 @@ public class ApparitionTexte extends Effet{
     
     public ApparitionTexte(Bandeau a){
         this.b=a;
-        b.setBackground(Color.RED);
-        b.setForeground(Color.WHITE);
+        
     }
     
     public void afficher(){
         b.setMessage("Tu me fais tourner la tête");
         b.setFont(new Font("SansSerif 15", Font.ITALIC,16));
-        for (int i=0;i<=50;i++){
-            b.setRotation(2*Math.PI*i /50);
+        b.setBackground(Color.WHITE);
+        b.setForeground(Color.red);
+        for (int i=0;i<=100;i++){
+            b.setRotation(2*Math.PI*i /100);
+            b.sleep(100);
             
         }
        

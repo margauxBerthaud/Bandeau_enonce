@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 
 public class Scenario {
-    private Bandeau bandeau;
+    
     protected ArrayList<ScenarioElement> effet=new ArrayList<>();
     
     public void ajouterEffet(Effet e, int repeat){

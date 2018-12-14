@@ -10,5 +10,21 @@ package bandeau;
  * @author Margaux
  */
 public class Example {
+    Bandeau b=new Bandeau();
     
+    public void exemple(){
+        Scenario s=new Scenario();
+        s.ajouterEffet(new ApparitionTexte(b), 1);
+        b.sleep(500);
+
+        s.ajouterEffet(new ZoomManege(b), 1);
+        b.sleep(500);
+        s.ajouterEffet(new FondMulticoloreFete(b), 1);
+        b.sleep(100);
+        s.ajouterEffet(new PoliceChangeanteBras(b), 1);
+        s.lireScenario();
+    }
+        public static void main(String[] args) {
+	    new Example().exemple();
+    }
 }

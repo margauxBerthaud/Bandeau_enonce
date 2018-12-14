@@ -10,8 +10,9 @@ package bandeau;
  * @author Margaux
  */
 public class ScenarioElement {
-    Effet effect;
-    int repeat;
+    protected Effet effect;
+    protected int repeat;
+    
     public ScenarioElement(Effet e, int r){
         effect=e;
         repeat=r;

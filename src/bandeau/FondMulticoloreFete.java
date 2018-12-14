@@ -18,12 +18,12 @@ public class FondMulticoloreFete extends Effet{
     
     public FondMulticoloreFete (Bandeau band){
         this.b = band;
-        b.setBackground(Color.red);
-        b.setForeground(Color.WHITE);
     }
     
     @Override
     public void afficher(){
+        b.setBackground(Color.red);
+        b.setForeground(Color.WHITE);
         b.setMessage("Je suis toujours à la fête");
         b.setFont(new Font("SansSerif 15", Font.ITALIC,16));
         Color col;
@@ -31,6 +31,8 @@ public class FondMulticoloreFete extends Effet{
         boolean bool = true;
         while(bool==true){
             b.setBackground(col= new Color(r.nextInt(256), r.nextInt(256), r.nextInt(256)));
+            b.sleep(2000);
+            bool=false;
         }
     }
 }
