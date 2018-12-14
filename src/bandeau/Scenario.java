@@ -11,17 +11,18 @@ import java.util.ArrayList;
  *
  * @author flaviebilhac
  */
+
 public class Scenario {
     private Bandeau bandeau;
-    protected ArrayList<Effet> effet=new ArrayList<>();
+    protected ArrayList<ScenarioElement> effet=new ArrayList<>();
     
-    public void ajouterEffet(Effet e){
-        effet.add(e);
+    public void ajouterEffet(Effet e, int repeat){
+        effet.add(new ScenarioElement(e,repeat));
         
     }
     public void lireScenario(){
         effet.forEach((e) -> {
-            e.afficher();
+            e.effect.afficher();
         });
     }
 }
